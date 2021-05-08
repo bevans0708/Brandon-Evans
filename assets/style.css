@@ -12,44 +12,76 @@ body {
    background: #333;
  }
  
- h1 {
-   padding: 20px 0;
+ .bio-name {
+   padding-top: 70px;
    margin: 0;
-   margin-bottom: 20px;
+   margin-bottom: 5px;
    font-size: 28px;
-   color: #eee;
-   text-align: center;
+   text-align: left;
+   display: inline-block;
+   width: 40%;
+ }
+
+ .bio-name a {
+    text-decoration: none;
+    font-size: 50px;
+    margin: auto 15px;
+    color: #0424d8;
+ }
+
+ header nav {
+    float: right;
+    padding-top: 75px;
+    display: block;
+    width: 45%;
+    margin: auto 10px;
+    text-align: right;
+ }
+
+ header nav ul {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 5px;
+ }
+
+ header nav ul li {
+    display: inline;
+ }
+
+ header nav ul li a {
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    padding-left: 40px;
+    color: #0424d8;
  }
  
- h2 {
-   font-size: 24px;
+ /* About Me section styling */
+ .about-img {
+    display: inline-block;
+    margin: 0;
+    font-size: 50px;
+    text-align: right;
+    opacity: 0.2;
+    background-image: url(./images/me.jpg);
+    width: 40%;
+    height: 600px;
+    background-size: cover;
+    box-shadow: 0 0 8px 8px white inset;
+    /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,0.6)); */
  }
- 
- a {
-   color: #d21034;
+
+ .about-text {
+    display: inline-block;
+    margin: 0;
  }
- 
- .container {
-   width: 1024px;
-   margin: 0 auto;
- }
- 
- #main-bio,
- #contact-info,
- #bio-image {
-   float: left;
- }
- 
- #main-bio {
-   width: 70%;
- }
- 
+
  #contact-info {
-   width: 30%;
+   width: 100%;
  }
- 
- #bio-image {
-   width: 250px;
-   height: 300px;
-   margin-right: 20px;
+
+ #contact-info ul li {
+    list-style-type: none;
  }
