@@ -1,18 +1,28 @@
+/* Body Styling */
 body {
    padding: 0;
    margin: 0;
    font-family: Georgia, "Times New Roman", Times, serif;
    font-size: 18px;
    line-height: 150%;
-   color: #333;
-   background: #efeee7;
- }
+   color: rgb(255, 255, 255);
+   background-color: #333;
+}
+
+/* Heading Styling */
+header {
+   margin-bottom: 0;
+   background: black;
+   border-bottom-color: #333;
+   border-bottom-style: solid;
+   box-shadow: 10px 0 18 black;
+   /* overflow: hidden;
+   position: fixed;
+   top: 0;
+   width: 100%; */
+}
  
- header {
-   background: #333;
- }
- 
- .bio-name {
+.bio-name {
    padding-top: 70px;
    margin: 0;
    margin-bottom: 5px;
@@ -20,68 +30,218 @@ body {
    text-align: left;
    display: inline-block;
    width: 40%;
- }
+}
 
- .bio-name a {
-    text-decoration: none;
-    font-size: 50px;
-    margin: auto 15px;
-    color: #0424d8;
- }
+.bio-name a {
+   text-decoration: none;
+   font-size: 50px;
+   margin: auto 15px;
+   color: #0424d8;
+}
 
- header nav {
-    float: right;
-    padding-top: 75px;
-    display: block;
-    width: 45%;
-    margin: auto 10px;
-    text-align: right;
- }
+header nav {
+   float: right;
+   padding-top: 75px;
+   display: block;
+   width: 45%;
+   margin: auto 30px;
+   text-align: right;
+}
 
- header nav ul {
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    list-style: none;
-    margin-bottom: 5px;
- }
+header nav ul {
+   padding: 0;
+   margin: 0;
+   align-items: center;
+   list-style: none;
+   margin-bottom: 5px;
+}
 
- header nav ul li {
-    display: inline;
- }
+header nav ul li {
+   display: inline;
+}
 
- header nav ul li a {
-    font-weight: bold;
-    font-size: 25px;
-    text-decoration: none;
-    padding-left: 40px;
-    color: #0424d8;
- }
+header nav ul li a {
+   font-weight: bold;
+   font-size: 25px;
+   text-decoration: none;
+   padding-left: 40px;
+   color: #0424d8;
+}
  
- /* About Me section styling */
- .about-img {
-    display: inline-block;
-    margin: 0;
-    font-size: 50px;
-    text-align: right;
-    opacity: 0.2;
-    background-image: url(./images/me.jpg);
-    width: 40%;
-    height: 600px;
-    background-size: cover;
-    box-shadow: 0 0 8px 8px white inset;
-    /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,0.6)); */
- }
+/* About Me section styling */
+.main-bio {
+   background-color: rgba(0, 0, 0, 0.835);
+   background-image: url(./images/space-background.jpg);
+   line-height: 0;
+   width:100%;
+   background-size: cover;
+   border-bottom-color: #333;
+   border-bottom-style: solid;
+   border-bottom-width: 3px;
 
- .about-text {
-    display: inline-block;
-    margin: 0;
- }
+}
 
- #contact-info {
+.about {
+   position: relative;
+   display: inline-block;
+
+}
+
+.about img {
+   height: 600px;
+   width: auto;    
+   display: inline-block;
+   margin: 0;
+   opacity: 0.5;
+   border: none;
+   line-height: 0;
+}
+
+.about-title {
+   color:rgb(255, 255, 255);
+   position: absolute;
+   font-size: 35px;
+   top: 50px;
+   right: 10px;
+}
+
+.about-text {
+   border-top: 100px;
+   color: white;
+   float: right;
+   margin: 45px 20px 0 0;
+   width: 59%;
+   line-height: 1.5;
+   height: 100%;
+}
+/* ************************* */
+/* Projects Section Styling  */
+/* ************************* */
+.projects {
+   /* position: relative; */
+   margin: 0;
+   display: inline-block;
    width: 100%;
- }
+   height: 500px;
+   background-color: black;
+   border-bottom-color: #333;
+   border-bottom-style: solid;
+   border-bottom-width:3px;
+}
 
- #contact-info ul li {
-    list-style-type: none;
+.projects-title {
+   height: 75%;
+   display: inline-block;
+   font-size: 35px;
+   width: 31.57%;
+   margin-top: 50px;
+   padding-right: 10px;
+   text-align: right;
+}
+
+/* .projects-imgs {
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin: 0;
+   width: 64%;
+   float: right;
+}
+
+.projects-imgs div img {
+   max-width: 100%;
+   max-height: 100%;
+   display: block;
+} */
+
+.project-main {
+   height: 49%;
+   float: right;
+   width: 64%;
+   margin: 10px 25px 0 0;
+   text-align: center;
+}
+
+.project-main img {
+   height: 100%;
+   border-style: solid;
+   border-width: 3px;
+   border-color: #333;
+}
+
+.project-2 {
+   height: 49%;
+   float: right;
+   width: 32%;
+   margin: 10px 25px 0 0;
+   text-align: center;
+}
+
+.project-2 img {
+   height: 100%;
+   border-style: solid;
+   border-width: 3px;
+   border-color: #333;
+}
+
+.project-3 {
+   height: 49%;
+   float: right;
+   width: 32%;
+   top: 0;
+}
+
+
+/* Contact Info Section Styling */
+#contact-info {
+   display: inline-block;
+   margin: 0;
+   width: 100%;
+   background-color: black;
+}
+
+#contact-info ul li {
+   float: right;
+   list-style-type: none;
+}
+
+
+/* Media Query Styles */
+@media screen and (max-width: 1300px) {
+   .bio-name a {
+      font-size: 35px;
+   }
+
+   header nav ul li a {
+      font-size: 15px;
+   }
+   .main-bio {
+      background-color: rgba(0, 0, 0, 0.835);
+      background-image: url(./images/space-background.jpg);
+   }
+
+   .about img {
+      height: 600px;
+      width: auto;    
+      display: inline-block;
+      margin: 0;
+      opacity: 0.5;
+      border: none;
+      margin-bottom: -7px;
+      line-height: 0;
+   }
+
+   .about {
+      position: relative;
+      /* display: flex; */
+      margin: 0;
+      max-width: 100%;
+      height: auto;
+   }
+
+   .about-text {
+      /* display: flex; */
+      margin: 0;
+      width: 100%;
+   }
  }
