@@ -67,6 +67,7 @@ header nav ul li a {
    padding-left: 40px;
    color: #0424d8;
 }
+/* end of header styling */
  
 /* About Me section styling */
 .main-bio {
@@ -114,9 +115,9 @@ header nav ul li a {
    line-height: 1.5;
    height: 80%;
 }
-/* ************************* */
+/* end of about me section */
+
 /* Projects Section Styling  */
-/* ************************* */
 .projects {
    height: 600px;
    background-color: black;
@@ -145,9 +146,9 @@ header nav ul li a {
    width: 90%;
    border-style: solid;
    border-color: #333;
-   background-image: url(./images/Capture.jpg);
+   background-image: url(./images/run-buddy-capture.jpg);
    background-repeat: no-repeat;
-   background-size: 100%;
+   background-size: cover;
 }
 
 a button {
@@ -173,7 +174,7 @@ a button:hover {
    display: inline-block;
    border-style: solid;
    border-color: #333;
-   background-image: url(./images/run-buddy-capture.jpg);
+   background-image: url(./images/robot-gladiators.jpg);
    background-repeat: no-repeat;
    background-size: 100%;
 }
@@ -187,10 +188,11 @@ a button:hover {
    width: 42%;
    border-style: solid;
    border-color: #333;
-   background-image: url(./images/robot-gladiators.jpg);
+   background-image: url(./images/Capture.jpg);
    background-repeat: no-repeat;
-   background-size: 100%;
+   background-size: cover;
 }
+/* end of  */
 
 
 
