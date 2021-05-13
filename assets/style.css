@@ -160,24 +160,6 @@ header nav ul li a {
    flex: 2;
 }
 
-a button {
-   height: 100%;
-   width: 100%;
-   opacity: 0;
-   border-radius: 20px;
-}
-
-a button:hover {
-   height: 100%;
-   width: 100%;
-   background-color: #0424d8;
-   font-size: 20px;
-   font-weight: bold;
-   color: white;
-   opacity: 0.8;
-   border-radius: 20px;
-}
-
 .project-2 {
    margin: 5px 5px;
    height: 45%;
@@ -190,8 +172,6 @@ a button:hover {
    background-size: cover;
    flex: 1;
 }
-
-
 
 .project-3 {
    margin: 5px 5px;
@@ -207,8 +187,33 @@ a button:hover {
 }
 /* end of project styling */
 
+/* Page buttons styling and actions */
+a button {
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+}
 
+#my-projects a button:hover {
+   height: 100%;
+   width: 100%;
+   background-color: #0424d8;
+   font-size: 20px;
+   font-weight: bold;
+   color: white;
+   opacity: 0.8;
+   border-radius: 20px;
+}
 
+#contact-info a button:hover {
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   opacity: 0.3;
+   border-radius: 10px;
+
+}
+/* end of page buttons styling */
 
 /* Contact Info Section Styling */
 #contact-info {
@@ -231,17 +236,58 @@ a button:hover {
    font-size: 35px;
 }
 
-#contact-info ul {
+.ul-list {
    float: right;
+   display: flex;
    width: 67%;
    height: 90%;
    padding: 0;
+   margin: 0;
 }
 
 #contact-info ul li {
-   float: right;
    list-style-type: none;
    padding: 0;
+}
+
+.contact-general {
+   max-width: 50%;
+   max-height: 100px;
+}
+
+.contact-general div {
+   display: flex;
+   justify-content: center;
+}
+
+.contact-general strong {
+   width: 150px;
+   /* margin-top: 5%; */
+   text-align: center;
+   padding: 50px 0;
+   font-size: 25px;
+}
+
+.contact-general a {
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin: 20px 0;
+   width: 60px;
+   height: 60px;
+   background-color: #0424d8;
+   border-radius: 10px;
+}
+
+.linkedin {
+   background: url(./images/linkedin-img2.png)
+}
+
+.github {
+   background: url(./images/github-img.png)
+}
+
+.email {
+   background: url(./images/email-img.png)
 }
 
 
@@ -259,7 +305,7 @@ a button:hover {
       background-image: url(./images/space-background.jpg);
    }
 
-   .about img {
+   /* .about img {
       height: 600px;
       width: auto;    
       display: inline-block;
@@ -268,18 +314,18 @@ a button:hover {
       border: none;
       margin-bottom: -7px;
       line-height: 0;
-   }
+   } */
 
    .about {
       position: relative;
-      /* display: flex; */
+      display: flex;
       margin: 0;
       max-width: 100%;
       height: auto;
    }
 
    .about-text {
-      /* display: flex; */
+      display: flex;
       margin: 0;
       width: 100%;
    }
